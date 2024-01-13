@@ -12,10 +12,10 @@ function Slider() {
       url: "https://cdn-images.farfetch-contents.com/20/19/25/61/20192561_45802048_800.jpg",
     },
     {
-      url: "/p03.jpg",
+      url: "https://cdn-images.farfetch-contents.com/20/19/18/89/20191889_45799995_800.jpg",
     },
     {
-      url: "/p04.jpg",
+      url: "https://cdn-images.farfetch-contents.com/19/45/48/99/19454899_43241742_800.jpg",
     },
   ];
 
@@ -72,17 +72,6 @@ function Slider() {
       {/* Right Arrow */}
       <div className="hidden sm:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <ArrowRight onClick={nextSlide} size={30} />
-      </div>
-      <div className="flex top-4 justify-center py-2">
-        {slides.map((slide, slideIndex) => (
-          <div
-            key={slideIndex}
-            onClick={() => goToSlide(slideIndex)}
-            className="text-2xl cursor-pointer"
-          >
-            <DotIcon />
-          </div>
-        ))}
       </div>
     </div>
   );

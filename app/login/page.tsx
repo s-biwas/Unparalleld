@@ -9,25 +9,28 @@ const LoginForm: React.FC = () => {
     email: "",
     password: "",
   });
+  
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     setValue({ ...value, [e.target.name]: e.target.value });
   };
+
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 p-8 min-h-[95vh] items-center animate-fade-in">
-      <div className="flex justify-center items-center border-gray-400 border-r-2 bg-gray-200 rounded-lg">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-0 p-8 min-h-[95vh] items-center">
+      {/* Picture Column */}
+      <div className="relative h-full">
         <Image
-          src="/p01.jpg"
+          src="/tshirt.png"
           alt="Image"
-          className="max-w-full h-auto "
-          height={500}
-          width={500}
+          height={1000}
+          width={1000}
+          className="absolute inset-0 w-full h-full object-cover"
           priority
         />
       </div>
 
       {/* Form Column */}
       <div className="flex flex-col justify-center items-center ">
-        <form className="  p-8 max-w-md rounded-lg shadow-sm shadow-gray-400 h-full">
+        <form className="p-8 max-w-md rounded-lg shadow-sm shadow-gray-400 h-full bg-white border border-gray border-solid border-1">
           <label className="block mb-2" htmlFor="email">
             Email
           </label>
@@ -56,7 +59,7 @@ const LoginForm: React.FC = () => {
 
           <Button type="submit">Login</Button>
         </form>
-        <span className="mt-2">
+        <span className="mt-2 text-white">
           No account?
           <Link href="/signup" className="hover:underline">
             Sign Up
