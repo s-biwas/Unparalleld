@@ -6,10 +6,10 @@ import { DotIcon } from "lucide-react";
 function Slider() {
   const slides = [
     {
-      url: "/p01.jpg",
+      url: "https://cdn-images.farfetch-contents.com/18/70/98/91/18709891_41030295_800.jpg",
     },
     {
-      url: "/p02.jpg",
+      url: "https://cdn-images.farfetch-contents.com/20/19/25/61/20192561_45802048_800.jpg",
     },
     {
       url: "/p03.jpg",
@@ -47,7 +47,7 @@ function Slider() {
     // Automatically advance to the next slide every 5000 milliseconds (5 seconds)
     intervalRef.current = setInterval(() => {
       nextSlide();
-    }, 3000);
+    }, 5000);
   };
 
   // Start the auto slide when the component mounts
@@ -66,7 +66,7 @@ function Slider() {
     <div className="max-w-full sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] mx-auto h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh] relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-        className="w-full h-full rounded-2xl bg-center bg-contain bg-no-repeat duration-500"
+        className="w-full h-full rounded-2xl bg-center bg-cover bg-no-repeat duration-500"
       ></div>
       {/* Left Arrow */}
       <div className="hidden sm:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
