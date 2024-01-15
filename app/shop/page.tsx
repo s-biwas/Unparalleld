@@ -1,3 +1,7 @@
-export default function Hello() {
-  return <div>Hello</div>;
+import ClothesBrowsingPage from "./ClothesBrowsingPage";
+import ClothesItem from "./ClothesItem";
+export default function Page(){
+    return(
+        <ClothesBrowsingPage></ClothesBrowsingPage>
+    )
 }
