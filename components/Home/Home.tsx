@@ -15,12 +15,20 @@ export default function Home() {
           <ArrowRight size={20} className="ml-2" />
         </Button>
       </div>
+<<<<<<< HEAD:app/page.tsx
 
       <hr className="border-gray-300 my-4 md:hidden" />
 
       <div className="relative h-full order-1 md:order-2">
         <div className="absolute inset-0 w-full h-auto bg-white-300 animate-fade-in overflow-hidden">
           <Slider />
+=======
+      <div className="relative h-full overflow-hidden order-1 md:order-2 -z-30">
+        <div className="absolute inset-0 animate-fade-in">
+          <div className="h-full md:h-1/2">
+            <Slider />
+          </div>
+>>>>>>> 06816969bca5844ace0c5035b494d56bc64a3790:components/Home/Home.tsx
         </div>
       </div>
     </main>
