@@ -60,27 +60,12 @@ function Slider() {
   }, [currentIndex]);
 
   return (
-<<<<<<< HEAD
     <div className="max-w-full sm:max-w-[600px] md:max-w-[800px] lg:max-w-[1000px] xl:max-w-[1200px] mx-auto h-[50vh] sm:h-[60vh] md:h-[70vh] lg:h-[80vh] xl:h-[90vh] relative group">
       <div
         style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
         className="w-full h-full rounded-2xl bg-center bg-cover bg-no-repeat duration-500"
       ></div>
       {/* Left Arrow */}
-=======
-    <div className="max-w-full mx-auto relative group">
-      <div className="overflow-hidden flex items-center justify-center">
-        <Image
-          src={slides[currentIndex].url}
-          alt={`Slide ${currentIndex + 1}`}
-          width={900}
-          height={900}
-          className="img"
-          priority
-        />
-      </div>
-
->>>>>>> 06816969bca5844ace0c5035b494d56bc64a3790
       <div className="hidden sm:group-hover:block absolute top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
         <ArrowLeft onClick={prevSlide} size={30} />
       </div>

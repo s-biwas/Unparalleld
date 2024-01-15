@@ -19,7 +19,7 @@ const ClothesItem: React.FC<ClothesItemProps> = ({ id, name, image, price }) => 
             {/* Add more details if needed */}
           </div>
         </div>
-        {id % 3 === 0 && <br />}
+        {id % 3 === 0 && <br/>}
       </>
     );
   };

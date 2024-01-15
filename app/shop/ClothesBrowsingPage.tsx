@@ -17,18 +17,15 @@ const clothesData: ClothesData[] = [
   // Add more clothing items as needed
 ];
 
-const ClothesBrowsingPage: React.FC = () => {
+const ClothesBrowsingPage = () => {
   return (
     <div className="clothes-browsing-page">
       <h1>Clothing Brand</h1>
-      <div className="clothes-list flex justify-between">
+      
         {clothesData.map((item) => (
-          <div key={item.id} style={{flex: '0 0 33.33%'}}>
-            <ClothesItem {...item} />
-          </div>
+          <ClothesItem key={item.id} {...item} />
         ))}
       </div>
-    </div>
   );
 };
 

@@ -19,7 +19,7 @@ const LoginForm: React.FC = () => {
       {/* Picture Column */}
       <div className="relative h-full">
         <Image
-          src="/tshirt.png"
+          src="https://cdn-images.farfetch-contents.com/18/70/98/91/18709891_41030295_800.jpg"
           alt="Image"
           height={1000}
           width={1000}
