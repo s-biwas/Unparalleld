@@ -18,20 +18,15 @@ Unparalleled is an e-commerce platform that specializes in custom printed clothe
 3. 🏗️ Build the project: `npm run build`
 4. 🌐 Run the application: `npm run dev`
 
-## Contributing
-
-We welcome contributions! If you'd like to contribute to the development of Unparalleled, please follow our [contribution guidelines](CONTRIBUTING.md).
 
 ## Feedback
 
 💌 We'd love to hear your thoughts! Please open an issue for any feedback, suggestions, or bug reports.
 
-## Connect with Us
+## Connect with Me
 
 Stay updated and connect with us on social media:
 
 - Twitter: [@UnparalleledShop](https://twitter.com/s-biwas)
 
-## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
